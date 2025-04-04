@@ -13,12 +13,12 @@ public class ShadowSlave {
     // El id de mi mod
     public static final String MODID = "shadowslave";
 
-
-
     public ShadowSlave(){
 
-        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();        
+        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();       
 
+        eventBus
+        
         Foods.register(eventBus);
     }
 }

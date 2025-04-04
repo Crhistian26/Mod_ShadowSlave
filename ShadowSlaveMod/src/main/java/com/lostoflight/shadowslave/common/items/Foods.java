@@ -17,19 +17,18 @@ import net.minecraftforge.registries.RegistryObject;
 public class Foods {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ShadowSlave.MODID);
 	
-	public static final RegistryObject<Item> MANGO = ITEMS.register("mango", 
-		()-> new Item(new Item.Properties()
-		.fireResistant()
-		.stacksTo(64)
-		.rarity(Rarity.RARE)
-		)
-	);
-	
+	// public static final RegistryObject<Item> MANGO = ITEMS.register("mango", 
+	// 	()-> new Item(new Item.Properties()
+	// 	.fireResistant()
+	// 	.stacksTo(64)
+	// 	.rarity(Rarity.RARE)
+	// 	)
+	// );
 
 
 	public static void register(IEventBus eventBus)
 	{
-		System.out.println("[TEST] Registrando los ítems...");
+		System.out.println("Registrando los ítems...");
 		ITEMS.register(eventBus);
 	}
 }
